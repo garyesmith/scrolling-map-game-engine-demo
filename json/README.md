@@ -1,7 +1,7 @@
 # Scrolling Map Game Engine Demo (jQuery)
 
 
-[General documentation for this repository is here](https://github.com/garyesmith/scrolling-map-game-engine-demo/).
+[General documentation for this repository is here](https://github.com/garyesmith/scrolling-map-game-engine-demo/tree/master/json).
 
 ## Level Configuration files
 
