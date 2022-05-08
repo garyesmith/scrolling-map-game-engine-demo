@@ -1,0 +1,14 @@
+{
+  "name": "socketmap",
+  "version": "1.0.0",
+  "description": "Multiplayer map example with NodeJS and Socket.io",
+  "main": "web-server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gary Smith",
+  "license": "ISC",
+  "dependencies": {
+    "http": "0.0.1-security"
+  }
+}

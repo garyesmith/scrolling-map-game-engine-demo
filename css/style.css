@@ -1,0 +1,136 @@
+body, html {
+	background-color: black;
+	font-family: Arial, sans-serif;
+	display: block;
+	position: relative;
+	padding: 0;
+	overflow-y: hidden;
+}
+#scrollmap {
+	width: 98%;
+	max-width: 420px;
+	padding-top: 100%;
+	margin: 0 auto;
+	padding: 0;
+	box-shadow: 0;
+	position: relative;
+	display: block;
+	background-color: transparent;
+	border: 0;
+}
+#scrollmap .scroller {
+	width: 100%;
+	padding: 0 0 100% 0;
+	margin: 0 auto;
+	background-color: white;
+	border: 0;
+	background-color: #7ea9cf;
+	background-repeat: repeat;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	border: 0;
+}
+#scrollmap .map {
+	width: 375%;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	display: block;
+	background-position: 0 0;
+	border: 0;
+	overflow: hidden;
+	left: -2.5%;
+	top: -2.5%;	
+}
+#scrollmap .map span {
+	width: 2%;
+	height: 0;
+	border: 0;
+	padding: 0 0 2% 0;
+	margin: 0;
+	display: inline-block;
+	vertical-align: bottom;
+	float: left;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+#scrollmap .map img {
+	width: 2%;
+	height: auto;
+	position: absolute;
+	z-index: 2;
+}
+#scrollmap .player {
+	border-radius: 50%;
+	background-color: transparent;
+	background-image: url('../img/player-stand.gif');
+	background-position: center center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	display: none;
+	position: absolute;
+	/* width: 7.5%;
+	height: 7.5%; */
+	left: 48%;
+	top: 48%;
+}
+#scrollmap h1 {
+	font-size: 16px;
+	line-height: 1.2em;
+	margin: 0;
+	box-sizing: border-box;
+	padding: 5px 0 5px 0;
+	color: white;
+}
+#scrollmap h1 a {
+	display: block;
+	float: right;
+	font-size: 10px;
+	padding-left: 19px;
+	background-image: url('../img/github.png');
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 15px auto;
+	text-decoration: none;
+	color: #c1c1c1;
+}
+#scrollmap h1 a:hover {
+	text-decoration: underline;
+}
+#scrollmap h2,
+#scrollmap h3,
+#scrollmap h4,
+#scrollmap h5,
+#scrollmap p {
+	color: white;
+}
+#scrollmap .panel {
+	position: relative;
+	clear: both;
+	width: 100%;
+	padding: 5px 2%;
+	height: 104px;
+	z-index: 1;
+	box-sizing: border-box;
+	border-top: 2px solid black;
+}
+#scrollmap .panel .left {
+	width: 40%;
+	float: left;
+	text-align: left;
+}
+#scrollmap .panel .right {
+	width: 40%;
+	float: right;
+	text-align: right;
+}
+#scrollmap .panel p {
+	font-family: 'Courier New', Courier, fixed;
+	font-size: 13px;
+	line-height: 1.2em;
+	margin: 4px 0 2px;
+}
