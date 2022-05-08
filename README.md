@@ -37,13 +37,13 @@ A configuration block at the top of `game.js` can be used to set initial values 
 - `tickSpeed`: an integer (default `100`) that defines the number of ms between each game "tick" that updates the map. The smaller this value, the faster the game will run. A balance should be found between speed and performance, keeping in mind that on client-side code the performance will always depend on the player's computer specs.
 - `zoom`: An integer (default `350`) that defines how much the map is zoomed as a percentage of its scrolling container. For example, a value of 200 means the map is twice as wide as the viewing area. A larger zoom means the map cells will be rendered larger, so the quality of the artwork will need to consider that.
 - `showZoomSelect`: a boolean value (default `true`) that defines whether a dropdown select element will be populated into the scoring panel to permit players to dynamically change the map zoom level themselves. This is intended as a testing or debugging feature and probably wouldn't be left visible for a production game.
-- `initialLevel`: an integer (default `1`) that determines which map level is loaded first. This integer must match the name of a config file in the `/json` subfolder; for example, level `1` will mean the loader expects a file called `level1.json` to be present. (Also see the [level config README](https://github.com/garyesmith/scrolling-map-game-engine-demo/json/).) 
+- `initialLevel`: an integer (default `1`) that determines which map level is loaded first. This integer must match the name of a config file in the `/json` subfolder; for example, level `1` will mean the loader expects a file called `level1.json` to be present. (Also see the [level config README](https://github.com/garyesmith/scrolling-map-game-engine-demo/tree/master/json).) 
 - `initialPlayerX`: an integer (default `5`) that defines the initial horizontal position of the player, in map cells, starting from 0.
 - `initialPlayerY`: an integer (default `4`) that defines the initial verticial position of the player, in map cells, starting from 0.
 
 #### Level Configuration
 
-Detailed documentation related to level creation and configuratation is available in the [levels README](https://github.com/garyesmith/scrolling-map-game-engine-demo/json/).
+Detailed documentation related to level creation and configuratation is available in the [levels README](https://github.com/garyesmith/scrolling-map-game-engine-demo/tree/master/json).
 
 
 ### Current Game Features
