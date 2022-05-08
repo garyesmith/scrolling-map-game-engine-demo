@@ -4,7 +4,7 @@ An implementation of a top-down scrolling map game engine, in a style reminiscen
 
 Live Demo: <a href="https://www.garysmith.ca/demos/scrolling-map-demo/" target="_blank">https://www.garysmith.ca/demos/scrolling-map-demo/</a>
 
-![Scrolling Map Demo screengrabs](https://www.garysmith.ca/assets/demo-scroll-map-screen-grabs.png)
+<a href="https://www.garysmith.ca/demos/scrolling-map-demo/" target="_blank"><img src="https://www.garysmith.ca/assets/demo-scroll-map-screen-grabs.png"</a>
 
 Navigate with your keyboard arrow keys. 
 
