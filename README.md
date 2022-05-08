@@ -59,7 +59,7 @@ Detailed documentation related to level creation and configuration is available 
 - Add ability for the player to collect items in an inventory, and then have those objects be 'used' at a later point.
 - Add an interface for modal pop-ups, to communicate text, images or additional details to the player, and receive responses by button click.
 - Add additional game states to enable a title page and game introduction sequences.
-- Make map modifications persistent, so items do not reappear with a level is revisited.
+- Make map modifications persistent, so items do not reappear when a level is revisited.
 - Enable game state saving and reloading.
 - Add enemy characters that roam the map and can be interacted with or fought.
 - Add a socket server to enable multiple humans to play and interact on the same maps.
