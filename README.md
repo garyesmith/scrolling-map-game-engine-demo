@@ -1,6 +1,6 @@
 # Scrolling Map Game Engine Demo (jQuery)
 
-An implementation of a top-down scrolling map game engine, in a style reminiscent of the RPG exploration games I enjoyed as a kid in the 1980s. Implemented entirely client-side with jQuery, HTML, CSS, JSON configuration files, and some image assets. [Play a live demo here](https://www.garysmith.ca/demos/scrolling-map-demo/).{:target="_blank"}.
+An implementation of a top-down scrolling map game engine, in a style reminiscent of the RPG exploration games I enjoyed as a kid in the 1980s. Implemented entirely client-side with jQuery, HTML, CSS, JSON configuration files, and some image assets. <a class="button" href="https://www.garysmith.ca/demos/scrolling-map-demo/" target="_blank">Play a live demo here</a>.
 
 ![Scrolling Map Demo screengrabs](https://www.garysmith.ca/assets/demo-scroll-map-screen-grabs.png)
 
