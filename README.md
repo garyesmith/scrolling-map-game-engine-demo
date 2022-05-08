@@ -43,7 +43,7 @@ A configuration block at the top of `game.js` can be used to set initial values 
 
 #### Level Configuration
 
-Detailed documentation related to level creation and configuratation is available in the [levels README](https://github.com/garyesmith/scrolling-map-game-engine-demo/tree/master/json).
+Detailed documentation related to level creation and configuratation is available in the [level config README](https://github.com/garyesmith/scrolling-map-game-engine-demo/tree/master/json).
 
 
 ### Current Game Features
