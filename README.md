@@ -27,9 +27,9 @@ If you already have a webserver up and running, simply clone this repo into a su
 ├── index.html              # HTML elements and start page
 ```
 
-`index.html` contains the HTML for this app. The head includes `/js/game.js` and `css/style.css` as well as jQuery 3.6.0 from a CDN service. The body defines container elements to hold the map and score panel. 
+`index.html` contains the HTML for this app. The page head includes `/js/game.js` and `/css/style.css` as well as the jQuery 3.6.0 library from a CDN service. The page body defines container elements to hold the map and score panel. 
 
-`game.js` initializes when the document has loaded. This file loads and renders the maps from the configuration files in the `/json` subfolder, and defines event handlers for keypresses. jQuery animations are used to smoothly scroll the full map within a larger container.
+`game.js` initializes when the document has loaded. This file loads and renders the maps from the configuration files in the `/json` subfolder, and defines event handlers for keypresses. jQuery animations are used to smoothly scroll the full map within a larger container. The player "walking" animations are implemented with animated GIFs, which are swapped into the page as necessary whenever the player movement direction changes.
 
 #### Game Configuration
 
