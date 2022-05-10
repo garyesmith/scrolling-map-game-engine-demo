@@ -11,7 +11,7 @@ $(document).ready(function() {
 		zoom: 350, // how much the map is is initially zoomed (percentage)
 		initialLevel: 1,
 		initialPlayerX: 5,
-		initialPlayerY 4,
+		initialPlayerY: 4,
 		showZoomSelect: true, // show a dropdown select to let player dynamic change the zoom level
 		keys: { //  key codes to directional position change
 			"37" : { xPos: -1, yPos: 0  }, // left key
@@ -111,6 +111,22 @@ $(document).ready(function() {
 				game.level.walkableIndex.push(data.char);
 			}
 		});
+
+		// build a graph for the astar pathfinding algorithm (0=wall, 1=walkable)
+		game.level.pathGraph=[];
+		for (const row of game.level.map) {
+			var pathRow=[];
+			for (const cell of row) {
+				if (game.level.walkableIndex.indexOf(cell)==-1) {
+					pathRow.push(0);
+				} else {
+					pathRow.push(1);
+				}
+			}
+			game.level.pathGraph.push(pathRow);
+		}
+		console.log(game.level.pathGraph);
+
 
 		// build an index of action map cells that can be checked quickly with each player step
 		game.level.actionIndex=[];
