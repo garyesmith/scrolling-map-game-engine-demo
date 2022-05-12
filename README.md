@@ -8,10 +8,12 @@ Live Demo: <a href="https://www.garysmith.ca/demos/scrolling-map-demo/" target="
 
 There are two ways to navigate the game map: 
 
- - use the keyboard arrows keys (for desktop computers)
- - tap or click on any walkable map location to walk to that cell (for any device)
+ - Use the keyboard arrows keys (desktop)
+ - Tap or click on any walkable map location to walk to that cell (desktop or mobile)
 
-Level maps are rendered dynamically at runtime from JSON configuration files. The demo includes two sample interconnected levels. The code is designed to be human readable, well-commented and understandable by developers interested in using this as a base to build a fully-functional game with their own maps, artwork and additional logic.
+Level maps are rendered dynamically at runtime based on JSON configuration files. 
+
+The demo includes two sample interconnected levels. The code is designed to be human readable, well-commented, and comprehensible by developers interested in using this as a base to build a fully-functional game with their own maps, artwork and additional logic.
 
 
 ### Dependencies
@@ -34,13 +36,18 @@ If you already have a webserver up and running, simply clone this repo into a su
 ├── img                     # All image assets
 ├── js                     
 │   ├── game.js             # Main game logic
+│   ├── easystar.js         # EasyStar pathfinding library
 ├── json                    # Definition files for game levels
 ├── index.html              # HTML elements and start page
 ```
 
-`index.html` contains the HTML for this app. The page head includes `/js/game.js` and `/css/style.css` as well as the jQuery 3.6.0 library from a CDN service. The page body defines container elements to hold the map and score panel. 
+`index.html` contains the HTML for this app. The page head includes `/js/game.js` and `/css/style.css` as well as the jQuery library from a CDN service, and EasyStar.js library locally. 
 
-`game.js` initializes when the document has loaded. This file loads and renders the maps from the configuration files in the `/json` subfolder, and defines event handlers for keypresses. jQuery animations are used to smoothly scroll the full map within a larger container. The player "walking" animations are implemented with animated GIFs, which are swapped into the page as necessary whenever the player movement direction changes.
+The page body defines empty container elements to hold the map, score panel, and other elements that are populated by Javascript. 
+
+`game.js` initializes when the document has loaded. This file loads and renders the maps from the configuration files in the `/json` subfolder, and defines event handlers for keypresses and map clicks/taps. 
+
+jQuery animations are used to smoothly scroll the full map within a larger container. The player "walking" animations are implemented with animated GIFs, which are swapped into the page as necessary whenever the player movement direction changes.
 
 
 #### Game Configuration
