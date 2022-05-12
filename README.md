@@ -6,15 +6,26 @@ Live Demo: <a href="https://www.garysmith.ca/demos/scrolling-map-demo/" target="
 
 <a href="https://www.garysmith.ca/demos/scrolling-map-demo/" target="_blank"><img src="https://www.garysmith.ca/assets/demo-scroll-map-screen-grabs.png" /></a>
 
-Navigate with your keyboard arrow keys. 
+There are two ways to navigate the game map: 
+
+ - use the keyboard arrows keys (for desktop computers)
+ - tap or click on any walkable map location to walk to that cell (for any device)
 
 Level maps are rendered dynamically at runtime from JSON configuration files. The demo includes two sample interconnected levels. The code is designed to be human readable, well-commented and understandable by developers interested in using this as a base to build a fully-functional game with their own maps, artwork and additional logic.
+
+
+### Dependencies
+
+- jQuery v3.6.0 
+- [EasyStar.js](https://github.com/prettymuchbryce/easystarjs) HTML5/Javascript Pathfinding Library
+
 
 ### Installation
 
 If you already have a webserver up and running, simply clone this repo into a subfolder in your doc root, then open `index.html` in a modern browser.
 
-### Implementation
+
+### Project structure
 
 ```
 .
@@ -31,6 +42,7 @@ If you already have a webserver up and running, simply clone this repo into a su
 
 `game.js` initializes when the document has loaded. This file loads and renders the maps from the configuration files in the `/json` subfolder, and defines event handlers for keypresses. jQuery animations are used to smoothly scroll the full map within a larger container. The player "walking" animations are implemented with animated GIFs, which are swapped into the page as necessary whenever the player movement direction changes.
 
+
 #### Game Configuration
 
 A configuration block at the top of `game.js` can be used to set initial values for the game:
@@ -40,6 +52,7 @@ A configuration block at the top of `game.js` can be used to set initial values 
 - `initialLevel`: an integer (default `1`) that determines which map level is loaded first. This integer must match the name of a config file in the `/json` subfolder; for example, level `1` will mean the loader expects a file called `level1.json` to be present. (Also see the [level config README](https://github.com/garyesmith/scrolling-map-game-engine-demo/tree/master/json).) 
 - `initialPlayerX`: an integer (default `5`) that defines the initial horizontal position of the player, in map cells, starting from 0.
 - `initialPlayerY`: an integer (default `4`) that defines the initial verticial position of the player, in map cells, starting from 0.
+
 
 #### Level Configuration
 
@@ -53,9 +66,9 @@ Detailed documentation related to level creation and configuration is available 
 - Ability for the player to move between multiple maps with exit/entrance cells.
 - Ability for the player to retrieve items that impact a player statistic (ie. `gold`)
 - Simple walking animation that uses animated GIFs.
+- Keyboard arrow navigation for desktop computers, and tap/click pathfinding navigation for all devices.
 
 ### Future Enhancements
-- Add a pathfinding algorithm so mobile users can navigate by tapping a destination map cell rather than using arrow keys.
 - Add ability for the player to collect items in an inventory, and then have those objects be 'used' at a later point.
 - Add an interface for modal pop-ups, to communicate text, images or additional details to the player, and receive responses by button click.
 - Add additional game states to enable a title page and game introduction sequences.
