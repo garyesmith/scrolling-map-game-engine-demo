@@ -68,18 +68,18 @@ Detailed documentation related to level creation and configuration is available 
 
 ### Current Game Features
 - Fully responsive layout.
-- Two 50 x 50 level maps with a variety of backgrounds.
+- Two 50 x 50 level maps with distinct styles.
 - A larger map that scrolls smoothly within a smaller window, at a customizable zoom level.
 - Ability for the player to move between multiple maps with exit/entrance cells.
 - Ability for the player to retrieve items that impact a player statistic (ie. `gold`)
-- Simple walking animation that uses animated GIFs.
+- A simple walking animation based on animated GIFs.
 - Keyboard arrow navigation for desktop computers, and tap/click pathfinding navigation for all devices.
 
-### Future Enhancements
+### Possible future enhancements
 - Add ability for the player to collect items in an inventory, and then have those objects be 'used' at a later point.
-- Add an interface for modal pop-ups, to communicate text, images or additional details to the player, and receive responses by button click.
-- Add additional game states to enable a title page and game introduction sequences.
-- Make map modifications persistent, so items do not reappear when a level is revisited.
+- Add an interface for modal pop-ups, to communicate text, images or additional details to the player, and ability to accept responses by button click.
+- Add more game states to enable things like a title page, game over page, introduction sequences, etc.
+- Make map modifications persistent to the session, so items do not reappear when a level is revisited.
 - Enable game state saving and reloading.
 - Add enemy characters that roam the map and can be interacted with or fought.
 - Add a socket server to enable multiple humans to play and interact on the same maps.
