@@ -9,10 +9,10 @@ $(document).ready(function() {
 	game.config = {
 		tickSpeed: 120, // how often (in ms) the display is updated, ie. game speed
 		zoom: 350, // how much the map is is initially zoomed (percentage)
-		initialLevel: 1,
-		initialPlayerX: 5,
-		initialPlayerY: 4,
-		showZoomSelect: true, // show a dropdown select to let player dynamic change the zoom level
+		initialLevel: 1, // first level to load
+		initialPlayerX: 5, // horizontal cell position of player when first level loads
+		initialPlayerY: 4, // vertical cell position of player when first level loads
+		showZoomSelect: true, // show a dropdown select to let player dynamically change the zoom level
 		keysCurrentlyDown: [] // tracks keys being held down between keydown and keyup events
 	}
 
@@ -21,8 +21,8 @@ $(document).ready(function() {
 		xCurr: 0, // current horizontal position (in map cells)
 		yCurr: 0, // current vertical position (in map cells)
 		stepDistance: {}, // pixels per step when player moves
-		gold: 0,
-		image: 'player-stand.gif'
+		gold: 0, // a common game stat associated with a play
+		image: 'player-stand.gif' // initial image to use to render the player
 	}
 
 	// load external map data
@@ -88,6 +88,7 @@ $(document).ready(function() {
 			game.initTapHandlers();
 		});
 
+		// activate the event handlers that listen for keypresses and map click/taps
 		game.initKeyHandlers();
 		game.initTapHandlers();
 
@@ -287,7 +288,7 @@ $(document).ready(function() {
 		}
 	};
 
-	// changing the player's animated gif depending on which way they are "facing"
+	// change the player's animated gif depending on which way they are "facing"
 	game.updateWalkAnimation = function(xDelta, yDelta) {
 		var img='';
 		if (xDelta<0) {
@@ -400,6 +401,7 @@ $(document).ready(function() {
 
 	}, game.config.tickSpeed);
 
+	// kick things off here
 	game.loadMap(game.config.initialLevel, game.config.initialPlayerX, game.config.initialPlayerY);
 
 });
